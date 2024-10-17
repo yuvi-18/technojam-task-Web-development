@@ -81,13 +81,13 @@ section{
 .rightBox{
     height: 100%;
     width: 50%;
+    border-left: 1px solid grey;
 }
 
 .leftText , .rytText{
     height: 87%;
-    width: 97.2%;
+    width: 97.01%;
 }
-
 
 .textFrom , .textTo{
     height: 91%;
@@ -125,7 +125,7 @@ section{
     border-right: none;
 }
 
-.copy, .sel,.switch{
+.copy, .sel,.switch, .speech{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,16 +133,23 @@ section{
     transition: background-color 0.2s ease;
 }
 
+.switch{
+    position: relative;
+    z-index: 10;
+    margin: 0 10px 0 10px;
+}
+
 select {
     border-radius: 7px;
     padding: 10px;
-    background: #5b5a5a;
+    background: #4d4d4d;
+    border: none;
     outline: none;
     cursor: pointer;
     color: whitesmoke;
 }
 
-.copy:hover, .sel:hover,.switch:hover{
+.copy:hover, .sel:hover,.switch:hover, .speech:hover{
     background-color: #5b5a5a;
     border-radius: 7px;
 }
