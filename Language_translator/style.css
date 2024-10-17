@@ -1,0 +1,171 @@
+:root{
+    --font-color:#d8d7eb;
+    --bg-color:#0a0a0a;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px 1px #878787;
+}
+
+
+.headText{
+    height: 100%;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.headText img{
+    height: 9vh;
+}
+
+.translatorText{
+    height: 100%;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.pop{
+    height: 100%;
+    width: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:4vh;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+section{
+    height: 50vh;
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    background-color: rgb(35, 35, 35);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px #878787;
+}
+
+.leftBox{
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid grey;
+}
+.rightBox{
+    height: 100%;
+    width: 50%;
+}
+
+.leftText , .rytText{
+    height: 87%;
+    width: 97.2%;
+}
+
+
+.textFrom , .textTo{
+    height: 91%;
+    resize: none;
+    color: white;
+    padding: 10px;
+    width: inherit;
+    outline: none;
+    font-size: 1.75;
+    background-color: #343232;
+}
+.textFrom{
+    border-bottom-left-radius: 10px;
+}
+.textTo{
+    border-bottom-right-radius: 10px;
+}
+
+.buttons{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    background-color: #343232;
+    height: 12%;
+}
+
+.rytbtns{
+    border-top-right-radius: 5px;
+    border-left: none;
+}
+.lftbtns{
+    border-top-left-radius: 5px;
+    border-right: none;
+}
+
+.copy, .sel,.switch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+select {
+    border-radius: 7px;
+    padding: 10px;
+    background: #5b5a5a;
+    outline: none;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.copy:hover, .sel:hover,.switch:hover{
+    background-color: #5b5a5a;
+    border-radius: 7px;
+}
+
+.translate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.trnBtn{
+    background-color:  black;
+    border: 1px solid white;
+    outline: none;
+    padding: 10px;
+    width: 35vw;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.trnBtn:hover{
+    background-color: #302f2f;
+}
