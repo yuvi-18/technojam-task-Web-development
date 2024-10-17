@@ -36,9 +36,14 @@ switchIcon.addEventListener("click", () => {
 // for translating the text
 
 translateBtn.addEventListener("click", () => {
+
+    // for checking if the input field is empty
     if (fromText.value.trim() === "") {
         alert("Enter Text")
-    } else {
+        toText.value = ''
+    }
+
+    else {
         let text = fromText.value,
             translateFrom = selectTag[0].value,
             translateTo = selectTag[1].value,
@@ -48,9 +53,6 @@ translateBtn.addEventListener("click", () => {
         })
     }
 });
-
-// for checking if the input field is empty
-
 
 // for copying the text to user 
 
