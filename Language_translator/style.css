@@ -70,7 +70,7 @@ section{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px #878787;
+    box-shadow: 0px 0px 20px 1px #878787;
 }
 
 .leftBox{
