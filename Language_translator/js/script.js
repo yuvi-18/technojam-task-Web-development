@@ -37,12 +37,11 @@ switchIcon.addEventListener("click", () => {
 
 translateBtn.addEventListener("click", () => {
 
-    // for checking if the input field is empty
+// for checking if the input field is empty
     if (fromText.value.trim() === "") {
         alert("Enter Text")
         toText.value = ''
-    }
-
+    } 
     else {
         let text = fromText.value,
             translateFrom = selectTag[0].value,
