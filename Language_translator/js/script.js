@@ -41,11 +41,11 @@ switchIcon.addEventListener("click", () => {
 
 translateBtn.addEventListener("click", () => {
 
-// for checking if the input field is empty
+    // for checking if the input field is empty
     if (fromText.value.trim() === "") {
         alert("Enter Text")
         toText.value = ''
-    } 
+    }
     else {
         let text = fromText.value,
             translateFrom = selectTag[0].value,
@@ -83,14 +83,16 @@ toSpeech.addEventListener("click", () => {
 
 // for poping the user in navbar 
 
-pop.addEventListener("click", ()=>{
+pop.addEventListener("click", () => {
     popHu.classList.remove('noneDis')
 })
 
 // For changing color 
 
-colorInp.addEventListener("keydown", function(event) {
+colorInp.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
-        document.body.style.backgroundColor = colorInp.value
+        document.body.style.backgroundColor = colorInp.value;
+        popHu.classList.add('noneDis');
+        colorInp.value = "";
     }
 });
