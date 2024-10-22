@@ -6,6 +6,8 @@ const selectTag = document.querySelectorAll("select"),
     toCopy = document.querySelector(".toCopy"),
     switchIcon = document.querySelector(".switch"),
     toText = document.querySelector(".textTo"),
+    pop = document.querySelector(".pop"),
+    popHu = document.querySelector(".popHu"),
     translateBtn = document.querySelector("button");
 
 
@@ -76,3 +78,9 @@ toSpeech.addEventListener("click", () => {
     utterance.lang = selectTag[1].value; // Language from the second select
     speechSynthesis.speak(utterance);
 });
+
+// for poping the user in navbar 
+
+pop.addEventListener("click", ()=>{
+    popHu.classList.toggle('noneDis')
+})

@@ -14,6 +14,7 @@ body{
 
 nav {
     height: 15vh;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +22,38 @@ nav {
     box-shadow: inset 0 0 10px 1px #878787;
 }
 
+.noneDis{
+    transform: scale(0);
+}
+
+.popHu {
+    height: 70px;
+    width: 100px;
+    position: fixed;
+    left: 91%;
+    background-color: var(--font-color);
+    border: 2px solid white;
+    border-radius: 5px;
+    right: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s ease;
+}
+
+.popHu img{
+    cursor: pointer;
+}
+
+.popHu input{
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+}
 
 .headText{
     height: 100%;
@@ -45,7 +78,7 @@ nav {
 }
 .pop{
     height: 100%;
-    width: 30vh;
+    width: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
