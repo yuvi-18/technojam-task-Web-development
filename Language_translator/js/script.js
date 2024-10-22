@@ -7,7 +7,9 @@ const selectTag = document.querySelectorAll("select"),
     switchIcon = document.querySelector(".switch"),
     toText = document.querySelector(".textTo"),
     pop = document.querySelector(".pop"),
+    body = document.querySelector("body"),
     popHu = document.querySelector(".popHu"),
+    colorInp = document.querySelector(".colorInp"),
     translateBtn = document.querySelector("button");
 
 
@@ -82,5 +84,13 @@ toSpeech.addEventListener("click", () => {
 // for poping the user in navbar 
 
 pop.addEventListener("click", ()=>{
-    popHu.classList.toggle('noneDis')
+    popHu.classList.remove('noneDis')
 })
+
+// For changing color 
+
+colorInp.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        document.body.style.backgroundColor = colorInp.value
+    }
+});
